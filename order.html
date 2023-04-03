@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    
+    <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
+  </script>
+</head>
+
+
+
+  <style>
+    body{
+      margin:0px;
+      padding: 0px;
+     background-clip: border-box;
+     background-image: url("https://img.freepik.com/free-vector/vector-seamless-pizza-pattern-background_53876-116505.jpg");
+     width:100%;
+    }
+
+    .container{
+      width:100%;
+      margin-top: auto;
+      padding-top: 0%;
+      text-align: center;
+     
+      
+    }
+    h1{
+      display:flexbox;
+      color:yellowgreen;
+      background-image: url("https://c1.wallpaperflare.com/preview/77/255/802/wood-ivy-green-leaves.jpg");
+      
+      
+    }
+    .form-control{
+      color:red;
+      width:auto;
+    
+    }
+  </style>
+ 
+ 
+<form action="order1.php" method="post" class="was-validated">
+  <h1 class="w3-center w3-jumbo w3-padding-32">PLACED ORDER HERE</h1>
+  
+  <hr>
+    <div class="container">
+      <div class="form-group">
+      <h2 class="w3-text-white"><label>customer name</label></h2>
+        <p><input class="w3-input w3-padding-5 w3-border" name="CustomerName" class="form control form-control-xs" placeholder="Customer Name" required></p>
+         <div class="valid-feedback">Valid</div>
+         <div class="Invalid-feedback">Please fill out this field</div>
+      </div>
+
+      <div class="form-group">
+        <h2 class="w3-text-white"><label for="customer no">Customer No</label></h2>
+          <p><input class="w3-input w3-padding w3-border" name="CustomerNumber" class="form control form-control-xs" placeholder="Customer Number" required></p>
+          <div class="valid-feedback">Valid</div>
+          <div class="Invalid-feedback">Please fill out this field</div>
+        </div>
+
+        <div class="form-group">
+        <h2 class="w3-text-white"><label for="City">Choose a City</label></h2> 
+               <select name="city" id="city">
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="delhi">Delhi</option>
+              <option value="latur">Latur</option>
+              
+            </select>
+           </div>
+            
+          <div class="form-group">
+            <h2 class="w3-text-white"><label for="email">Email Address</label></h2>
+            <p><input class="w3-input w3-padding-5 w3-border" name="email" class="form control form-control-xs" placeholder="email" required></p>
+              <div class="valid-feedback">Valid</div>
+               <div class="Invalid-feedback">Please fill out this field</div>
+            </div>
+
+          <div class="form-group">
+            <h2 class="w3-text-white"><label for="dispatch address">Dispatch Address</label></h2>
+           <p><input class="w3-input w3-padding-5 w3-border" name=" dispatchaddress" class="form-control form-control-xs" placeholder="Address" required></p>
+            <div class="valid-feedback">Valid</div>
+            <div class="Invalid-feedback">Please fill out this field</div>
+          </div>
+
+        
+          <div class="form-check">
+            <label class="form-check-label">
+          <h2 class="w3-text-white"><label>which type of pizza you have to choose ?</label></h2>
+            <p class="w3-text-white"><input type ="radio" name="radio" value="margherita"> Margherita</p>
+             <p class="w3-text-white"><input type ="radio" name="radio" value="formaggio"> Formaggio</p>
+             <p class="w3-text-white"><input type ="radio" name="radio" value="meat town"> Meat town</p>
+             <p class="w3-text-white"><input type ="radio" name="radio" value="double cheese margherita pizza"> Double cheese Margherito pizza</p>
+             <p class="w3-text-white"><input type ="radio" name="radio" value="cheese n tomato pizza"> Cheese n tomato pizza</p>
+             <p class="w3-text-white"><input type ="radio" name="radio" value="None"> None of the above</p>
+              
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+            <h2 class="w3-text-white"><label>which type of burgur you have to choose ?</label></h2>
+              <p class="w3-text-white"><input type ="radio" name="r1" value="lasagna"> Lasagna</p>
+               <p class="w3-text-white"><input type ="radio" name="r1" value="ravioli"> Ravioli</p>
+               <p class="w3-text-white"><input type ="radio" name="r1" value="spaghetti Classica"> Spaghetti Classica</p>
+               <p class="w3-text-white"><input type ="radio" name="r1" value="None"> None of the above</p>
+              
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label">
+              <h2 class="w3-text-white"><label>which type of sandwich you have to choose ?</label></h2>
+                <p class="w3-text-white"><input type ="radio" name="r2" value="bruschetta"> Bruschetta</p>
+                 <p class="w3-text-white"><input type ="radio" name="r2" value="ravioli"> Ravioli</p>
+                 <p class="w3-text-white"><input type ="radio" name="r2" value="None"> None of the above</p>
+                
+                </div>
+
+             
+                <div class="form-check">
+                  <label class="form-check-label">
+                <h2 class="w3-text-white"><label>which type of pasta you have to choose ?</label></h2>
+                  <p class="w3-text-white"><input type ="radio" name="r3" value="fusilli"> Fusilli</p>
+                  <p class="w3-text-white"><input type ="radio" name="r3" value="none"> None of the above</p>
+                  </div>
+           
+            <div class="form-group">
+              <h2 class="w3-text-white"><label for="Payment">Payment Method</label></h2>
+              <p><select name="payment" id="payment"></p>
+                <option value="online payment">Online Payment</option>
+                <option value="cash on delivery">Cash on delivery</option>
+              </select>
+            </div>
+
+             <button type="Order" class="btn btn-primary btn-md">order Now</button>
+          
+  </div>   
+</div>
+    </div>
+  </div>
+  </form>
+</body>
